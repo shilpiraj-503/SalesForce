@@ -1,0 +1,18 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="fname" type="String"/>
+    <aura:attribute name="lname" type="String"/>
+    <aura:attribute name="fullname" type="String"/>
+    <aura:attribute name="isDispF" type="Boolean" default="false"/>
+    
+	<lightning:card title="Name Calc" footer="name@calc.com">
+        <lightning:input label="FirstName" type="text" value="{!v.fname}"/><br/>
+        <lightning:input label="LastName" type="text" value="{!v.lname}"/><br/>
+        
+        <lightning:button label="Get Full Name" variant="success" onclick="{!c.Fullname}"/><br/>
+        
+        <aura:if isTrue="{!v.isDispF}">
+        Full Name :: {!v.fullname}
+        
+        </aura:if>
+    </lightning:card>
+</aura:component>

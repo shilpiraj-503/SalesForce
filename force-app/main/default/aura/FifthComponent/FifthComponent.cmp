@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="FifthClassController" >
+
+    <aura:handler name="init" value="this" action="{!c.myAction}"/>
+    <aura:attribute name="Name" type="String"/>
+    Employee Name :: {!v.Name}
+</aura:component>

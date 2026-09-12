@@ -1,0 +1,15 @@
+<template>
+
+    <lightning-card  variant="Narrow"  title="Child Component" icon-name="standard:account">
+
+        <lightning-input type="number" variant="standard" name="ValueA" label="Value of A" onchange={inputHandler}></lightning-input><br/>
+        <lightning-input type="number" variant="standard" name="ValueB" label="Value of B" onchange={inputHandler}></lightning-input><br/>
+
+        <lightning-button variant="brand" label="Sum" title="sumValue" onclick={calcHandler}></lightning-button> &nbsp;
+        <lightning-button variant="brand" label="Sub" title="subValue" onclick={calcHandler}></lightning-button> &nbsp;
+        <lightning-button variant="brand" label="Mul" title="mulValue" onclick={calcHandler}></lightning-button> &nbsp;
+        <lightning-button variant="brand" label="Div" title="divValue" onclick={calcHandler}></lightning-button> &nbsp;<br/><br/>
+        <lightning-button variant="Success" label="Print" title="SendDataToParent" onclick={childHandler}></lightning-button> <br/>
+    </lightning-card>
+
+</template>

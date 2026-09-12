@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="CreateContactCompCtrl">
+   
+    <aura:attribute name="con" type="Contact" default="{'sObject' : 'Contact'}"/>
+    
+	<lightning:card title="Create Contacts" iconName="standard:account">
+        <lightning:input label="Enter First Name:: " type="text" value="{!v.con.FirstName}"/> <br/><br/>
+         <lightning:input label="Enter Last Name:: " type="text" value="{!v.con.LastName}"/><br/><br/>
+         <lightning:input label="Enter Phone:: " type="text" value="{!v.con.Phone}"/><br/><br/>
+         <lightning:input label="Enter Email:: " type="text" value="{!v.Email}"/><br/><br/>
+        
+        <lightning:button label="Save" variant="success" onclick="{!c.createContact}"/><br/>
+    </lightning:card>
+</aura:component>

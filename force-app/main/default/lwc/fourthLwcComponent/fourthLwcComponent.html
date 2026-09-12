@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Iteration Example" icon-name="standard:account">
+       <b>Template for each example :: </b>
+
+       <template for:each={city} for:item="c">
+           <p key={a}>{c}</p>
+       </template>
+
+       <b>Template iterator :: </b>
+
+       <template iterator:it ={city}>
+           <p key={it}>{it.value}</p>
+           </template>
+
+    </lightning-card>
+</template>

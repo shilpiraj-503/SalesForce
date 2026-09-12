@@ -1,0 +1,12 @@
+<template>
+
+    <lightning-card title="Parent Component" icon-name="custom:custom63">
+        <b> It's the parent component.</b>
+
+        <lightning-button variant="success" label="Call Child Function" title="titleName" onclick={parentHandlerFunc}></lightning-button>
+        <br/>
+        <c-child-lwc-component name-prop={nameProp}></c-child-lwc-component>
+
+    </lightning-card>
+
+</template>

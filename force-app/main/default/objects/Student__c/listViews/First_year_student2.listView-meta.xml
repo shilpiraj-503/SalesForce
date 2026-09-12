@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_year_student2</fullName>
+    <columns>NAME</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Student_Year__c</field>
+        <operation>equals</operation>
+        <value>First year</value>
+    </filters>
+    <label>First year student2</label>
+</ListView>

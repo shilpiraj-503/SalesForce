@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Validation_Rule</fullName>
+    <active>false</active>
+    <errorConditionFormula>Student_Deposit_Fees__c &lt;10000    ||   Student_Deposit_Fees__c &gt; 500000</errorConditionFormula>
+    <errorMessage>Please Deposit more that 10000 Rs and less than 500000</errorMessage>
+</ValidationRule>

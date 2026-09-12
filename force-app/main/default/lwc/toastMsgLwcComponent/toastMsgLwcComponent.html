@@ -1,0 +1,8 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Toast-Msg-Example" icon-name="standard:account">
+        <lightning-button variant="success" label="Success Button" title="titleName" onclick={successHandler} icon-name="custom:custom72" icon-position="right"></lightning-button>&nbsp;
+        <lightning-button variant="destructive" label="Destructive Button" title="titleName" onclick={errorHandler}></lightning-button>&nbsp;
+        <button class="slds-button slds-button_brand" style="background-color:grey" onclick={infoHandler}>Info Button</button>
+        <button class="slds-button slds-button_brand" style="background-color:orange" onclick={warningHandler}> Warning Button</button>
+    </lightning-card>
+</template>

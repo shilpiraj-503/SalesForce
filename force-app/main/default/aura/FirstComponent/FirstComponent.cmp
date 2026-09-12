@@ -1,0 +1,8 @@
+<aura:component >
+	<lightning:card title="Aura lightening Component 1">
+        <br/>
+        <b>Welcome ro Aura Component</b> <br/><br/>
+        It is our first Component.
+        
+    </lightning:card>
+</aura:component>

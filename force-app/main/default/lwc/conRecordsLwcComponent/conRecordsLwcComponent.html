@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Display Contacts" icon-name="custom:custom70">
+    <lightning-input type="search" label="Search Contact" onchange={searchHandler}></lightning-input>
+    <div class="slds-grid slds-wrap">
+        <template for:each={conList.data} for:item="obj">
+            <div class="slds-col slds-size_1-of-3" key={obj.Id}>
+                <div class="slds-p-around_x-small">
+            <lightning-card title={obj.Name}  icon-name="custom:custom60">
+                <lightning-button variant="brand" label="View Info" title="info" value={obj.Id} slot="actions" onclick={clickHandler}></lightning-button>
+                <img src={imageProp}/><br/>
+                FirstName : {obj.FirstName}<br/>
+                LastName : {obj.LastName}<br/>
+                Phone : {obj.Phone}</br>
+               
+                <p slot="footer">{obj.Email}</p>
+            </lightning-card>
+            </div>
+            </div>
+        </template>
+    </div>
+    </lightning-card>
+</template>

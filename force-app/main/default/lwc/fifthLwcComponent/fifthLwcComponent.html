@@ -1,0 +1,16 @@
+<template>
+
+    <lightning-card title="Name Calculator">
+
+        <template if:false={isDispName}>
+        <lightning-input type="text" variant="standard" name="FirstName" label="FirstName" onchange={firstFunc}></lightning-input>
+         <lightning-input type="text" variant="standard" name="LastName" label="LastName" onchange={secondFunc}></lightning-input>
+        <lightning-button variant="success" label="Get Full Name" title="Get Full Name" onclick={additionFunc}></lightning-button>
+         </template>
+        <template if:true={isDispName}>
+         Final Name: {finalName}<br/>
+         <lightning-button variant="success" label="Get new entry" title="Name Entry" onclick={handleClick}></lightning-button><br/>
+
+         </template>
+    </lightning-card>
+</template>

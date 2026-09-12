@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Parent Component" >
+
+        <lightning-input type="text" variant="standard" name="Name" label="Enter Name" onchange={inputHandler}></lightning-input>
+        <lightning-input type="text" variant="standard" name="Phone" label="Enter Phone" onchange={inputHandler}></lightning-input>
+        <lightning-input type="text" variant="standard" name="Email" label="Enter Email" onchange={inputHandler}></lightning-input>
+        </br>
+
+        <lightning-button variant="success" label="Display Info" title="Display" onclick={clickHandler}></lightning-button>
+
+        <template if:true={isDisp}>
+
+        <c-first-child-lwc-component name-props={nameData} phone-props={phoneData} email-props={emailData}></c-first-child-lwc-component>
+        <lightning-button variant="success" label="New Entry" title="Entry" onclick={enterDetails}></lightning-button>
+        </template>
+    </lightning-card>
+</template>

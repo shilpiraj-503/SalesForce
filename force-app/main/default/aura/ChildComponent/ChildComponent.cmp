@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="Name" type="String"/>
+     <aura:attribute name="Phone" type="String"/>
+    <aura:registerEvent name="firstevent" type="c:ParentChildEvent"/>
+    
+    <lightning:card title="Child Component">
+    
+        <lightning:input label="Name" type="text" value="{!v.Name}"/><br/><br/>
+        <lightning:input label="Phone" type="text" value="{!v.Phone}"/><br/><br/>
+        <lightning:button label="Save" onclick="{!c.nameInputChild}" variant="success"/><br/>
+    </lightning:card>
+	
+</aura:component>

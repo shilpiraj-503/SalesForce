@@ -1,0 +1,30 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="CreateAccountCompCtrl">
+    
+     <aura:attribute name="acc" type="Account" default="{'sObject' : 'Account'}"/>
+    
+	<lightning:card title="Create Contacts" iconName="standard:account">
+        <lightning:input label="Enter Name:: " type="text" value="{!v.acc.Name}"/> <br/><br/>
+         
+        <lightning:select label="Type" value="{!v.acc.Type}">
+        	<option value="--None--">--None--</option>
+            <option value="Prospect">Prospect</option>
+            <option value="Customer-Direct">Customer-Direct</option>
+            <option value="Channel Partner/Reseller">Channel Partner/Reseller</option>
+            <option value="Installation Partner">Installation Partner</option>
+            <option value="Technology Partner">Technology Partner</option>
+            <option value="Other">Other</option>
+        </lightning:select>
+        <br/><br/>
+         <lightning:input label="Enter Phone:: " type="text" value="{!v.acc.Phone}"/><br/><br/>
+        <lightning:select label="Rating" value="{!v.acc.Rating}">
+        	<option value="--None--">--None--</option>
+            <option value="Hot">Hot</option>
+            <option value="Cold">Cold</option>
+            <option value="Warm">Warm</option>
+        </lightning:select>
+        <br/><br/>
+        <lightning:input label="Enter Annual Revenue:: " type="text" value="{!v.acc.AnnualRevenue}"/><br/><br/>
+        <lightning:button label="Save" variant="success" onclick="{!c.createAccount}"/><br/>
+    </lightning:card>
+	
+</aura:component>

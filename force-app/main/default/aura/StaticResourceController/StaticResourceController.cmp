@@ -1,0 +1,23 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    
+    <lightning:card >
+        <aura:set attribute="actions">
+            <lightning:button label="New" variant="SUCCESS"/>
+            <lightning:button label="Edit" variant="brand"/>
+            <lightning:button label="Delete" variant="Destructive"/>
+        </aura:set>
+        <aura:set attribute="footer">
+            <lightning:button label="End"/>
+            <center>shilpi.raj@gmail.com</center>
+        </aura:set>
+        <aura:set attribute="title">
+            <lightning:button label="Start"/>
+            <center>shilpi.raj@gmail.com</center>
+        </aura:set>
+   			<div class="shil">
+        <img src="{!$Resource.Shilpi}" width="300" height="300"/>
+                </div>
+    </lightning:card>
+	
+</aura:component>

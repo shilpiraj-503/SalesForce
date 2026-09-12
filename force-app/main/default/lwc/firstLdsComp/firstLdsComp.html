@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="LDS View Page">
+        <lightning-record-form
+        object-api-name={objectApiName}
+        record-id={recordId}
+        layout-type="Compact"
+        mode="view">
+        </lightning-record-form>
+    </lightning-card>
+    <lightning-card title="LDS Edit Page">
+        <lightning-record-form
+        object-api-name={objectApiName}
+        record-id={recordId}
+       fields={field}
+        mode="edit">
+        </lightning-record-form>
+    </lightning-card>
+    <lightning-card title="LDS View Page">
+        <lightning-record-form
+        object-api-name={objectApiName}
+        record-id={recordId}
+        layout-type="Full"
+        mode="readOnly">
+        </lightning-record-form>
+    </lightning-card>
+</template>

@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Display Account Records" icon-name="standard:account">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Rating</th>
+                <th>Industry</th>
+            </tr>
+            <template for:each={accList.data} for:item="acc">
+                <tr key={acc.Id}>
+                    <td>{acc.Name}</td>
+                    <td>{acc.Type}</td>
+                    <td>{acc.Rating}</td>
+                    <td>{acc.Industry}</td>
+                </tr>
+            </template>
+        </table>
+    </lightning-card>
+</template>

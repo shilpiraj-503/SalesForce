@@ -1,0 +1,33 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="DisplayContactAuraCtrl">
+    
+    <aura:handler name="init" value="this" action="{!c.contactFetching}"/>
+	<aura:attribute name="ConList1" type="List"/>
+    <aura:attribute name="Con" type="String"/>
+    <lightning:card title="display" iconName="standard:account">
+        <lightning:input label="Enter Name:: " type="text" value="{!v.Con}"/>
+        <lightning:button label="Search" variant="success" onclick="{!c.searchFetching}"/><br/>
+        <lightning:input label="Enter Name:: " type="search" value="{!v.Con}" onchange="{!c.searchFetching}"/>
+        <br/>
+        List :: <br/> 
+        <br/>
+        
+        <table>
+            <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>LeadSource</th>
+                </tr>
+            <aura:iteration items="{!v.ConList1}" var ="a">
+            <tr>
+                <td>{!a.FirstName}</td>
+                <td>{!a.LastName}</td>
+                <td>{!a.Phone}</td>
+                <td>{!a.Email}</td>
+                <td>{!a.LeadSource}</td>
+            </tr>
+                </aura:iteration>
+        </table>
+    </lightning:card>
+</aura:component>

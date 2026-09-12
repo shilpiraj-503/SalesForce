@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Second_Year</fullName>
+    <active>true</active>
+    <label>Second Year</label>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>City__c</picklist>
+        <values>
+            <fullName>Banglore</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Bhagalpur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gurugram</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haridwar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hyderabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kanatal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lucknow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mumbai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mysore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pune</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonipat</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HOD__c</picklist>
+        <values>
+            <fullName>Mr%2E B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Semester__c</picklist>
+        <values>
+            <fullName>1ST SEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2ND SEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3RD SEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4TH SEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5TH SEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6TH SEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7TH SEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8TH SEM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Student_State__c</picklist>
+        <values>
+            <fullName>Bihar</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Delhi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Karnataka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maharastra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telangana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Student_Year__c</picklist>
+        <values>
+            <fullName>Second year</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

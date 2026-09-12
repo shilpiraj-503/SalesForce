@@ -1,0 +1,12 @@
+<template>
+<lightning-card  variant="Narrow"  title="BMI Calc" icon-name="standard:account">
+    
+
+    <lightning-input type="decimal" variant="standard" name="height" label="Value of Height" onchange={valueOfheight}></lightning-input><br/>
+        <lightning-input type="decimal" variant="standard" name="weight" label="Value of Weight in Kg" onchange={valueOfweight}></lightning-input><br/>
+        <lightning-button variant="brand" label="BMI" title="BMI" onclick={bmiValue}></lightning-button><br/><br/>
+        <template if:true={isDisp}>
+        BMI:: {bmiProp};
+        </template>
+    </lightning-card>
+</template>

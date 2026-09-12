@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Create Contacts">
+        <div>
+        <lightning-input type="text" name="FirstName" label="FirstName" onchange={inputHandler}></lightning-input>
+        <lightning-input type="text" name="LastName" label="LastName" onchange={inputHandler}></lightning-input>
+        <lightning-input type="text" name="Email" label="Email" onchange={inputHandler}></lightning-input>
+        <lightning-input type="text" name="Phone" label="Phone" onchange={inputHandler}></lightning-input>
+        <lightning-button variant="success" label="Save" title="Save" onclick={buttonHandler}></lightning-button>
+        </div>
+    </lightning-card>
+
+</template>

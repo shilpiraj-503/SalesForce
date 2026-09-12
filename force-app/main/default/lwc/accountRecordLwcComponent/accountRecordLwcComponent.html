@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="List Of Accounts">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Rating</th>
+                <th>Actions</th>
+            </tr>
+            <template for:each={accListProp.data} for:item="obj">
+            <tr key={obj.Id}>
+                <td>{obj.Name}</td>
+                <td>{obj.Type}</td>
+                 <td>{obj.Rating}</td>
+                 <td>
+                     <lightning-button variant="destructive" label="Delete" value={obj.Id} onclick={handleClick}></lightning-button>
+                 </td>
+            </tr>
+            </template>
+        </table>
+    </lightning-card>
+
+</template>

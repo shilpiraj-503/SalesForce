@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="3rd comp" icon-name="standard:account">
+
+        
+        <lightning-input type="checkbox" label="Enter ur checkbox" onchange={checkboxHandler}></lightning-input>
+        <template if:true={checkProp}>
+        
+        <lightning-input type="text" label="Enter ur name" onchange={nameHandler}></lightning-input>
+
+        <lightning-input type="text" label="Enter ur Phone" onchange={phoneHandler}></lightning-input>
+
+        
+        <div>
+            Name: {nameProp}<br/>
+            Phone : {phoneProp}</br>
+            CheckBox : {checkProp}
+        </div>
+        </template>
+
+       <template if:false={checkProp}>
+           Please click on the checkbox!
+         </template>   
+    </lightning-card>
+
+</template>

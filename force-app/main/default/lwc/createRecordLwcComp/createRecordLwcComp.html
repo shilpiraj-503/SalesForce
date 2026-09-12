@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Account Input">
+        <div>
+        <lightning-input type="text" name="Name" label="Name" onchange={inputHandler}></lightning-input>
+        <lightning-input type="text" name="Type" label="Type" onchange={inputHandler}></lightning-input>
+        <lightning-input type="text" name="Rating" label="Rating" onchange={inputHandler}></lightning-input>
+        <lightning-input type="text" name="Phone" label="Phone" onchange={inputHandler}></lightning-input>
+        <lightning-button variant="success" label="Save" title="Save" onclick={buttonHandler}></lightning-button>
+        </div>
+    </lightning-card>
+
+</template>

@@ -1,0 +1,13 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Interest Calc" icon-name="standard:account">
+    
+
+    <lightning-input type="decimal" variant="standard" name="amount" label="Enter Amount(in Rs)" onchange={valueOfAmount}></lightning-input><br/>
+        <lightning-input type="decimal" variant="standard" name="rate" label="Enter Rate(in %)" onchange={valueOfRate}></lightning-input><br/>
+        <lightning-input type="decimal" variant="standard" name="time" label="Enter Time(in years)" onchange={valueOfTime}></lightning-input><br/>
+        <lightning-button variant="brand" label="Interest" title="Interest" onclick={interestValue}></lightning-button><br/><br/>
+    <template if:true={isDisp}>
+        Interest Amounts to :: {interestProp} Rs/Year
+    </template>
+    </lightning-card>
+</template>

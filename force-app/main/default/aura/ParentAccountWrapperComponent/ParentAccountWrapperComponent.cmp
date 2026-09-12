@@ -1,0 +1,21 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="AccountWrapperCtrl">
+    
+    <aura:handler name="checkEvent" event="c:checkboxEvent" action="{!c.checkBoxData}"/>
+     <aura:attribute name="contactrecords" type="List"/>
+   <c:AccountWrapperComponent/>
+    <lightning:card title="Associated Contact ">
+        <table>
+        	<tr>
+            	<th>Last Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+            <aura:iteration items="{!v.contactrecords}" var="r">
+            	<tr>
+                	<td>{!r.LastName}</td>
+                    <td>{!r.Phone}</td>
+                    <td>{!r.Email}</td> </tr>
+            </aura:iteration>
+        </table>
+      </lightning:card>
+</aura:component>

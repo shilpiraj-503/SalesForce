@@ -1,0 +1,12 @@
+<template>
+
+    <lightning-card title="Navigation First Component" icon-name="stnadard:account">
+
+        I am in first Component.<br/>
+        <lightning-input type="text" variant="standard" name="name" label="Enter Name" onchange={changeHandler}></lightning-input><br/>
+        <lightning-input type="text" variant="standard" name="email" label="Enter Email" onchange={changeHandler}></lightning-input><br/>
+        <br/>
+        <Lightning-button label="Navigate to another component" variant="success" onclick={compNavigation}></Lightning-button>
+    </lightning-card>
+
+</template>

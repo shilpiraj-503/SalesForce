@@ -1,0 +1,20 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler name="init" value="this" action="{!c.myAction}"/>
+    
+    <aura:attribute name="stdName" type="String" access="public" description="to store student name"/>
+    <aura:attribute name="stdPhone" type="String" access="public" description="to store student phone"/>
+    <aura:attribute name="stdEmail" type="String"  access="public" description="to store student email"/>
+    
+	<div class="box">
+        
+        <!--'v' is the value provider which we used to view the information of attribute-->
+        
+        <div class="slds-p-around_x-small">
+        
+        <b>Student Info::</b> <br/><br/>
+        Student Name:: {!v.stdName}<br/>
+        Student Phone Number: {!v.stdPhone}<br/>
+        Student Email : {!v.stdEmail}<br/>
+            </div>
+    </div>
+</aura:component>

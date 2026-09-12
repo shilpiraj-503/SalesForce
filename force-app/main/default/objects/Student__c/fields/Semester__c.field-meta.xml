@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Semester__c</fullName>
+    <label>Semester</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Student_Year__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1ST SEM</fullName>
+                <default>false</default>
+                <label>1ST SEM</label>
+            </value>
+            <value>
+                <fullName>2ND SEM</fullName>
+                <default>false</default>
+                <label>2ND SEM</label>
+            </value>
+            <value>
+                <fullName>3RD SEM</fullName>
+                <default>false</default>
+                <label>3RD SEM</label>
+            </value>
+            <value>
+                <fullName>4TH SEM</fullName>
+                <default>false</default>
+                <label>4TH SEM</label>
+            </value>
+            <value>
+                <fullName>5TH SEM</fullName>
+                <default>false</default>
+                <label>5TH SEM</label>
+            </value>
+            <value>
+                <fullName>6TH SEM</fullName>
+                <default>false</default>
+                <label>6TH SEM</label>
+            </value>
+            <value>
+                <fullName>7TH SEM</fullName>
+                <default>false</default>
+                <label>7TH SEM</label>
+            </value>
+            <value>
+                <fullName>8TH SEM</fullName>
+                <default>false</default>
+                <label>8TH SEM</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>First year</controllingFieldValue>
+            <valueName>1ST SEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>First year</controllingFieldValue>
+            <valueName>2ND SEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Second year</controllingFieldValue>
+            <valueName>3RD SEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Second year</controllingFieldValue>
+            <valueName>4TH SEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third year</controllingFieldValue>
+            <valueName>5TH SEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third year</controllingFieldValue>
+            <valueName>6TH SEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fourth year</controllingFieldValue>
+            <valueName>7TH SEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fourth year</controllingFieldValue>
+            <valueName>8TH SEM</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

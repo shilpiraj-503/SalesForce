@@ -1,0 +1,36 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller = "DisplayOpportunity">
+    <aura:attribute name="opp" type="Opportunity" default="{'sObject':'Opportunity'}"/>
+                    
+    
+    <lightning:card title="Creating Opportunity">
+        
+        <lightning:input label="Name" type="text" value="{!v.opp.Name}"/> <br/>
+       
+         <lightning:select label="Type" value="{!v.opp.Type}">
+        	<option value="--None--">--None--</option>
+            <option value="New Customer">New Customer</option>
+            <option value="Existing Customer - Replacement">Existing Customer - Replacement</option>
+            <option value="Existing Customer - Downgrade">Existing Customer - Downgrade</option>
+            <option value="Existing Customer - Upgrade">Existing Customer - Upgrade</option>
+            
+        </lightning:select><br/>
+       
+         <lightning:select label="Stage Name" value="{!v.opp.StageName}">
+        	<option value="--None--">--None--</option>
+            <option value="Prospecting">Prospecting</option>
+            <option value="Qualification">Qualification</option>
+            <option value="Needs Analysis">Needs Analysis</option>
+            <option value="Value Proposition">Value Proposition</option>
+             <option value="Id. Decision Makers">Id. Decision Makers</option>
+            <option value="Perception Analysis">Perception Analysis</option>
+             <option value="Proposal/Price Quote">Proposal/Price Quote</option>
+            <option value="Negotiation/Review">Negotiation/Review</option>
+             <option value="Closed Won">Closed Won</option>
+            <option value="Closed Lost">Closed Lost</option>
+          </lightning:select><br/>
+        <lightning:input label="CloseDate" type="Date" value="{!v.opp.CloseDate}"/><br/><br/>
+        <lightning:button label="Save" variant = "success" onclick="{!c.createOpportunity}"/><br/>
+    
+    </lightning:card>
+    
+</aura:component>

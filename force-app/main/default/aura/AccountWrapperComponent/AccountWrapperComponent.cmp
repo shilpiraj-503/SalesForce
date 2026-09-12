@@ -1,0 +1,33 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="AccountWrapperCtrl">
+    <aura:handler name="init" value="this" action="{!c.loadFunction}"/>
+    <aura:attribute name="records" type="List"/>
+    <aura:registerEvent name="checkEvent" type="c:checkboxEvent"/>
+    <lightning:card title="Account Records with checkbox" iconName="standard:account">
+    List= {!v.records}
+        <table>
+        	<tr>
+            	<th>Sr. No.</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Rating</th>
+                <th>Industry</th>
+            </tr>
+            <aura:iteration items="{!v.records}" var="r">
+            	<tr>
+                	<td>{!r.no}</td>
+                    <td>{!r.acc.Type}</td>
+                    <td>{!r.acc.Rating}</td>
+                    <td>{!r.acc.Industry}</td>
+                    <td>{!r.acc.Name}</td>
+                    <td>
+                        <lightning:input type="checkbox" value="{!r.checkBox}" name="{!r.acc.Id}" onclick="{!c.checkBoxCheck}"/>
+                    </td>
+                    <td class="slds-p-around_x-small">
+                        <lightning:button label="View Info" value="{!r.acc.Id}" variant="success" onclick="{!c.IdFunction}"/>
+                    </td>
+                </tr>
+            </aura:iteration>
+        </table>
+    </lightning:card>
+	
+</aura:component>

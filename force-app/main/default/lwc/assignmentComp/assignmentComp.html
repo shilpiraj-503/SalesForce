@@ -1,0 +1,44 @@
+<template>
+    <lightning-card  title="Assignment: Account Lists" icon-name="standard:account">
+        <table>
+            <tr>
+                <th>Sr No.</th>
+                <th>Checkbox</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Rating</th>
+                <th>Industry</th>
+                <th>Open</th>
+                <th>Edit</th>
+                <th>Associated Contact</th>
+                <th>Associated Opportunity</th>
+            </tr>
+            <template for:each={accList} for:item="obj" for:index="index">
+            <tr key={obj.Id}>
+                 <td>{index}</td>
+                 <td>
+                     <lightning-input type="checkbox"  title={obj.Id} onclick={checkBoxHandler}> </lightning-input>
+                 </td>
+                 <td>{obj.Name}</td>
+                 <td>{obj.Type}</td>
+                 <td>{obj.Rating}</td>
+                 <td>{obj.Industry}</td>
+                 <td>
+                     <lightning-button variant="success" label="Open" title={obj.Id} onclick={openClick}></lightning-button>
+                 </td>
+                 <td>
+                     <lightning-button variant="destructive" label="Edit" title={obj.Id} onclick={editClick}></lightning-button>
+                 </td>
+                 <td>
+                     <lightning-button variant="brand" label="Associated Contacts" title={obj.Id} onclick={conClick}></lightning-button>
+                 </td>
+                 <td>
+                     <lightning-button variant="brand" label="Associated Opportunity" title={obj.Id} onclick={oppClick}></lightning-button>
+                 </td>
+            </tr>
+            </template>
+
+        </table>
+    </lightning-card>
+
+</template>

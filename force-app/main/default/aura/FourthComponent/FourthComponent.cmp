@@ -1,0 +1,40 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="Avalue" type="Integer"/>
+    <aura:attribute name="Bvalue" type="Integer"/>
+    <aura:attribute name="Sum" type="Integer"/>
+    <aura:attribute name="Mul" type="Integer"/>
+    <aura:attribute name="Sub" type="Integer"/>
+    <aura:attribute name="Div" type="Integer"/>
+    <aura:attribute name="isDispsum" type="Boolean" default="false"/>
+    <aura:attribute name="isDispsub" type="Boolean" default="false"/>
+    <aura:attribute name="isDispmul" type="Boolean" default="false"/>
+    <aura:attribute name="isDispdiv" type="Boolean" default="false"/>
+    
+    <lightning:card title="Calculator" footer="New Calc">
+        
+    	<lightning:input label="Value of A" type="text" value="{!v.Avalue}"/><br/>
+        <lightning:input label="Value of B" type="text" value="{!v.Bvalue}"/><br/>
+   
+        <lightning:button label="Sum" variant="success" onclick="{!c.sumValue}"/>
+        <lightning:button label="Sub" variant="success" onclick="{!c.subValue}"/>
+        <lightning:button label="Mul" variant="success" onclick="{!c.mulValue}"/>
+        <lightning:button label="Div" variant="success" onclick="{!c.divValue}"/><br/>
+    
+     <aura:if isTrue="{!v.isDispsum}">
+        Sum :: {!v.Sum}
+        
+        </aura:if><br/>
+    <aura:if isTrue="{!v.isDispsub}">
+        Sub :: {!v.Sub}
+        
+        </aura:if><br/>
+    <aura:if isTrue="{!v.isDispmul}">
+        Mul :: {!v.Mul}
+        
+        </aura:if><br/>
+    <aura:if isTrue="{!v.isDispdiv}">
+        Div :: {!v.Div}
+        
+        </aura:if><br/>
+	 </lightning:card>
+</aura:component>

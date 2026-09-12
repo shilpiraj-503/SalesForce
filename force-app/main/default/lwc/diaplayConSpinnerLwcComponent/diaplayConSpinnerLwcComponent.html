@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Spinner Example" icon-name="custom:custom72">
+        <lightning-button label="Display Contact Data" variant="success" onclick={clickHandler}>
+            
+        </lightning-button>
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </template>
+        <table>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+            <template for:each={conList} for:item="obj">
+            <tr key={obj.Id}>
+                <td>{obj.FirstName}</td>
+                <td>{obj.LastName}</td>
+                <td>{obj.Phone}</td>
+                <td>{obj.Email}</td>
+            </tr>
+            </template>
+        </table>
+    </lightning-card>
+
+</template>

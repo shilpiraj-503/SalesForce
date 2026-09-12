@@ -1,0 +1,17 @@
+<template>
+
+    <lightning-card  variant="Narrow"  title="Calculator" icon-name="standard:account">
+        <lightning-input type="number" variant="standard" name="A" label="Value of A" onchange={valueOfA}></lightning-input><br/>
+        <lightning-input type="number" variant="standard" name="B" label="Value of B" onchange={valueOfB}></lightning-input><br/>
+        <lightning-button variant="brand" label="Sum" title="Sum" onclick={sumOfNo} icon-name="utility:add"></lightning-button><br/><br/>
+         <lightning-button variant="brand" label="Sub" title="Sub" onclick={subOfNo} icon-name="utility:dash"></lightning-button><br/><br/>
+          <lightning-button variant="brand" label="Mul" title="Mult" onclick={mulOfNo} icon-name="utility:close"></lightning-button><br/><br/>
+           <lightning-button variant="brand" label="Div" title="Divi" onclick={divOfNo}></lightning-button><br/><br/>
+
+           <template if:true={isDisp}> 
+           Result:: {resultProp}
+           </template>
+           <br/>
+    </lightning-card>
+
+</template>

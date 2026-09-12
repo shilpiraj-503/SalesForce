@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Ratings__c</fullName>
+    <label>Minimum Ratings</label>
+    <summarizedField>Rating__c.Total_rating_out_of_50__c</summarizedField>
+    <summaryForeignKey>Rating__c.Student__c</summaryForeignKey>
+    <summaryOperation>min</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<template>
+
+    
+    <lightning-card  variant="Narrow"  title="Parent Component" icon-name="standard:account">
+        <c-child-calculator-lwc-comp onbuttonclick={parentHandler}></c-child-calculator-lwc-comp>
+
+        You will see your result here! Click on the button Above saying 'Print'!<br/>
+        <template if:true={isDisp}>
+          Your Result :: {resultProps}<br/><br/>
+
+          <lightning-button variant="Success" label="ProcessNew" title="NewProcess" onclick={newResults}></lightning-button> <br/>
+        </template><br/>
+    </lightning-card>
+  
+
+</template>

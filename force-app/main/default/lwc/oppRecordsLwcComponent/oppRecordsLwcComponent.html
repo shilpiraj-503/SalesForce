@@ -1,0 +1,22 @@
+<template>
+     <lightning-card title="Display Opportunity Records" icon-name="standard:account">
+         <lightning-input type="search" label="Search Opportunity" onchange={searchHandler}></lightning-input>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>StageName</th>
+                <th>CloseDate</th>
+                <th>LeadSource</th>
+            </tr>
+            <template for:each={oppList.data} for:item="opp">
+                <tr key={opp.Id}>
+                    <td>{opp.Name}</td>
+                    <td>{opp.StageName}</td>
+                    <td>{opp.CloseDate}</td>
+                    <td>{opp.LeadSource}</td>
+                </tr>
+            </template>
+        </table>
+    </lightning-card>
+
+</template>

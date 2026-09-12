@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Profile_status_complete__c</fullName>
+    <formula>IF( ISBLANK( Student_Name__c ) , 0.00, 0.20) + IF( ISBLANK(  Student_Email__c  ) , 0.00, 0.20) + IF( ISBLANK(   Student_Phone__c   ) , 0.00, 0.20) + IF( ISBLANK(  Student_DOB__c  ) , 0.00, 0.20) + IF(  ISPICKVAL(  Student_Year__c  , &quot;&quot;)  , 0.00, 0.20)</formula>
+    <label>Profile status complete</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>
